@@ -1,0 +1,180 @@
+body {
+	font-family:Georgia, serif;
+	font-size:11px;
+	background-color:#FFF;
+	margin-top:1px;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+input {
+	font-family: Arial, "Times New Roman", Times, serif;
+	font-size: 10px;
+}
+
+textarea {
+	font-family: Arial, "Times New Roman", Times, serif;
+	font-size: 10px;
+}
+
+select {
+	font-family: Arial, "Times New Roman", Times, serif;
+	font-size: 10px;
+}
+
+a {
+	text-decoration:none;
+}
+
+img {
+	border:none;	
+}
+
+.titulo {
+	font-family:Georgia, serif;
+	font-size:14px;
+	font-weight:bold;
+	font-style:italic;
+	background-color:#D3DCE6;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.filtro {
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:bold;
+	background-color:#BBBBBB;
+	border:solid 1px #000000;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.lista {
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:bold;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.grillaTable {
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	border:solid 1px #000000;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.grillaTh {
+	border-left:solid 1px #000000;
+	border-bottom:solid 1px #000000;
+	background-color:#333333;
+	font-size:12px;
+	text-align:center;
+	color:#FFFFFF;
+}
+
+.grillaTr {
+	background-color:#E9E9E9;
+	height:20px;
+}
+
+.grillaTr:hover {
+	background-color:#F5F5DB;
+	cursor:pointer;
+}
+
+.grillaTd {
+	border-left:solid 1px #000000;
+	border-bottom:solid 1px #000000;
+	vertical-align:middle;
+}
+
+.grillaTrSel {
+	background-color:#9999FF;
+	height:20px;
+}
+
+.grillaTr2 {
+	background-color:#B5B5B5;
+	font-weight:bold;
+}
+
+.divCaption {
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	color:#333333;
+	background-color:#999999;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.tblForm {
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	background-color:#EFEFEF;	
+	border: solid 1px #BBBBBB;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tag {
+	height:25px;
+	text-align: right;
+	vertical-align:middle;
+	/*background-color:#F5FEF8;*/
+}
+
+.btGuardar {
+	background-image:url(../imagenes/guardar.png); 
+	background-repeat:no-repeat; 
+	background-color:#A2B5B7;
+	background-position: 2px 2px; 
+	width:82px; 
+	height:23px; 
+	text-align:right; 
+	vertical-align:middle; 
+	font-size:11px; 
+	font-weight:bold;
+	color: #323E3F;
+}
+
+.btCancelar {
+	background-image:url(../imagenes/cancelar.png); 
+	background-repeat:no-repeat; 
+	background-color:#A2B5B7;
+	background-position: 2px 2px; 
+	width:82px; 
+	height:23px; 
+	text-align:right; 
+	vertical-align:middle; 
+	font-size:11px; 
+	font-weight:bold;
+	color: #323E3F;
+}
+
+.btRegresar {
+	background-image:url(../imagenes/regresar.png); 
+	background-repeat:no-repeat; 
+	background-color:#A2B5B7;
+	background-position: 2px 2px; 
+	width:140px; 
+	height:23px; 
+	text-align:right; 
+	vertical-align:middle; 
+	font-size:11px; 
+	font-weight:bold;
+	color: #323E3F;
+}
+
+.msjFooter {
+	font-family:Georgia, serif;
+	font-size:10px;
+	font-style:italic;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:right;
+}
+

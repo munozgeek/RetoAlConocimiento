@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - reto_mun@192.168.0.142" uuid="2908dba0-8677-4c7b-b075-c45c86031224">
+    <database-info product="MySQL" version="5.5.41-0ubuntu0.14.10.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <schema name="" catalog="reto_mun"/>
+    <table name="encuentros" schema="" catalog="reto_mun" type="TABLE">
+      <column name="CodRonda" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Numero" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Equipo1" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Equipo2" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Equipo3" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <primary-key name="PRIMARY" columns="CodRonda,Numero"/>
+    </table>
+    <table name="equipos" schema="" catalog="reto_mun" type="TABLE">
+      <column name="Numero" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Equipo" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="logo" sqlType="VARCHAR" precision="150" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Numero"/>
+    </table>
+    <table name="estadistica" schema="" catalog="reto_mun" type="TABLE">
+      <column name="CodRonda" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Encuentro" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Equipo" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="FlagGano" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Puntos" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <primary-key name="PRIMARY" columns="CodRonda,Encuentro,Equipo"/>
+    </table>
+    <table name="historial" schema="" catalog="reto_mun" type="TABLE">
+      <column name="Id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Ronda" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Equipo" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Pregunta" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="FlagAcierto" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="J04n"/>
+      <column name="Encuentro" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="FlagValido" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="Id"/>
+      <index name="historial_uk_2" unique="true" columns="Ronda,Equipo,Pregunta,Encuentro"/>
+    </table>
+    <table name="parametros" schema="" catalog="reto_mun" type="TABLE">
+      <column name="Parametro" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Descripcion" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Valor" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="Parametro"/>
+    </table>
+    <table name="preguntas" schema="" catalog="reto_mun" type="TABLE">
+      <column name="Numero" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Pregunta" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="OpcionA" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="OpcionB" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="OpcionC" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="OpcionD" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="Respuesta" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Puntos" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Ronda" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="Numero"/>
+    </table>
+    <table name="resultados" schema="" catalog="reto_mun" type="TABLE">
+      <column name="CodRonda" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Numero" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Puntos1" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Puntos2" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Puntos3" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <primary-key name="PRIMARY" columns="CodRonda,Numero"/>
+    </table>
+    <table name="rondas" schema="" catalog="reto_mun" type="TABLE">
+      <column name="CodRonda" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Ronda" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="CodRonda"/>
+    </table>
+    <table name="status" schema="" catalog="reto_mun" type="TABLE">
+      <column name="CodRonda" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Encuentro" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Turno" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="CodRonda,Encuentro,Turno"/>
+    </table>
+    <table name="turnos" schema="" catalog="reto_mun" type="TABLE">
+      <column name="Equipo1" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Equipo2" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Equipo3" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="CodRonda" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Encuentro" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <primary-key name="PRIMARY" columns="Encuentro,CodRonda"/>
+    </table>
+  </data-source>
+</component>

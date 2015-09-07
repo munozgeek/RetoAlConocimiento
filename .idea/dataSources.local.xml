@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - reto_mun@192.168.0.142" uuid="2908dba0-8677-4c7b-b075-c45c86031224">
+      <secret-storage>master_key</secret-storage>
+      <user-name>dmunoz</user-name>
+      <schema-pattern>reto_mun.*</schema-pattern>
+      <default-schemas>reto_mun.*</default-schemas>
+    </data-source>
+  </component>
+</project>
